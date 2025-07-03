@@ -5,16 +5,12 @@ Cahier des charges – Station de Remplissage Automatique
  1. Objectif général
 Mettre en place une station de remplissage automatique capable de détecter le niveau d’un réservoir et de gérer l’ouverture/fermeture d’une vanne pour effectuer le remplissage sans intervention humaine.
 
----
-
- 2. Fonctionnalités attendues
+ 3. Fonctionnalités attendues
 - Détection du niveau bas du réservoir.
 - Ouverture automatique de la vanne si niveau bas.
 - Arrêt automatique du remplissage lorsque le niveau haut est atteint.
 - Sécurité : arrêt automatique en cas de dysfonctionnement (temps dépassé, capteur défectueux...).
 - Interface simple pour le suivi des niveaux (optionnel).
-
----
 
 3. Composants matériels nécessaires
 - Automate programmable (type Siemens S7-1200 ou équivalent).
@@ -24,7 +20,6 @@ Mettre en place une station de remplissage automatique capable de détecter le n
 - Interface HMI (optionnel).
 - Câblage + borniers.
 
----
 
  4. Logique de fonctionnement
 1. Au démarrage, l'automate lit l'état des capteurs.
@@ -32,7 +27,7 @@ Mettre en place une station de remplissage automatique capable de détecter le n
 3. Le remplissage continue jusqu'à ce que le capteur haut détecte un niveau haut → fermeture de la vanne.
 4. Si le remplissage prend trop de temps → alarme de sécurité et fermeture de la vanne.
 
----
+
 
  5. Contraintes
 - Tension de commande : 24V DC.
@@ -40,7 +35,7 @@ Mettre en place une station de remplissage automatique capable de détecter le n
 - Fiabilité du système : test automatique à chaque démarrage.
 - Possibilité d’intégration future d’un écran HMI.
 
----
+
 
  6. Livrables
 - Schéma électrique complet.
